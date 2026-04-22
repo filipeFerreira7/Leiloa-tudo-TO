@@ -73,6 +73,20 @@ leiloa-to/
 javac -d bin src/model/*.java src/data/*.java src/*.java
 ```
 
+### Rodar cenarios automatizados
+
+```bash
+javac -encoding UTF-8 -d out/production/leiloa-to src/model/*.java src/data/*.java src/*.java
+java -cp out/production/leiloa-to CenarioTeste
+```
+
+Esse runner:
+- sobe o `ServerMain`
+- inicia `ClientMain` reais para admin e compradores
+- executa cadastros, lances, consultas e encerramentos
+- valida autenticacao e permissoes via protocolo
+- gera uma copia do historico em `historico_leiloes_teste.json`
+
 ### 1️⃣ Iniciar o Servidor
 
 ```bash
