@@ -93,6 +93,12 @@ Esse runner:
 java -cp bin ServerMain
 ```
 
+Ou, se a porta `5000` ja estiver em uso:
+
+```bash
+java -cp bin ServerMain 5001
+```
+
 **Saída esperada:**
 ```
 ╔════════════════════════════════════════════╗

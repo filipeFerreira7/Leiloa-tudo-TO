@@ -101,6 +101,11 @@ public class CenarioTeste {
                 ROOT
         );
 
+        if (server.waitForOutput("Address already in use", Duration.ofSeconds(3))
+                || server.waitForOutput("Nao foi possivel subir o servidor.", Duration.ofSeconds(3))) {
+            throw new Exception("A porta 5000 ja esta em uso. Encerre o servidor atual antes de rodar o CenarioTeste.");
+        }
+
         aguardarPorta();
         assertProcessOutput(server, "boot do servidor", "Servidor aguardando conex", Duration.ofSeconds(10));
         return server;
