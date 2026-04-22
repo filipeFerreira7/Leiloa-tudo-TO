@@ -23,25 +23,7 @@
     "vencedor": "comprador1",
     "valorFinal": "1500,00",
     "totalLances": 2,
-    "lances": ["comprador2: R$800", "00", "comprador1: R$1500", "00"],
+    "lances": ["comprador2: R$800,00", "comprador1: R$1500,00"],
     "dataEncerramento": "17/04/2026 20:47:29"
-  },
-  {
-    "nomeItem": "Vaca Holstein",
-    "valorInicial": "1000,00",
-    "vencedor": "comprador1",
-    "valorFinal": "1500,00",
-    "totalLances": 3,
-    "lances": ["comprador1: R$1100", "00", "comprador2: R$1200", "00", "comprador1: R$1500", "00"],
-    "dataEncerramento": "22/04/2026 16:27:40"
-  },
-  {
-    "nomeItem": "Cavalo Arabe",
-    "valorInicial": "2000,00",
-    "vencedor": "comprador2",
-    "valorFinal": "3000,00",
-    "totalLances": 2,
-    "lances": ["comprador1: R$2500,00", "comprador2: R$3000,00"],
-    "dataEncerramento": "22/04/2026 16:27:42"
   }
 ]
