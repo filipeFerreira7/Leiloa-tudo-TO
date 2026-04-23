@@ -48,14 +48,13 @@ public class Leilao {
     }
 
     public synchronized void adicionarLance(String clienteId, double valor, String nomeCliente) {
+
         if (!encerrado && valor > lanceAtual) {
             lanceAtual = valor;
             ultimoLanceador = nomeCliente;
-            
-            // Registrar no histórico geral
+
             historicoLances.add(nomeCliente + ": R$" + String.format("%.2f", valor));
-            
-            // Rastrear lances por cliente
+
             lancesporCliente.computeIfAbsent(clienteId, k -> new ArrayList<>()).add(valor);
             nomesPorCliente.put(clienteId, nomeCliente);
         }
